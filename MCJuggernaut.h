@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol MCJuggernautDelegate
+@protocol MCJuggernautDelegate<NSObject>
 - (void)juggernautReceiveMessage:(NSString *)message;
 @optional
 - (void)juggernautDisconnected;
@@ -25,6 +25,9 @@
 +(id)juggernautWithHost:(NSString *)host port:(NSInteger)port target:(id)target;
 
 -(void)connect;
+-(void)connected:(bool)success;
+-(void)disconnected;
+-(void)receiveMessage:(NSString *)message;
 
 @property NSInteger port;
 @property (nonatomic, retain) NSString *host;

@@ -32,20 +32,28 @@
 
 }
 
-- (void)onConnect:(bool)success
+- (void)connected:(bool)success
 {
 	if(success)
 	{
-		[target performSelector:@selector(isConnected)];
+		if ([target respondsToSelector:@selector(juggernautConnected)])
+			[target juggernautConnected];
 		return;
 	}
 	
-	[target performSelector:@selector(connectFailed)];	
+	if ([target respondsToSelector:@selector(juggernautErrorConnecting)])
+		[target juggernautErrorConnecting];	
 }
 
-- (void)onClose
+- (void)disconnected
 {
-	[target performSelector:@selector(disconnected)];
+	if ([target respondsToSelector:@selector(juggernautDisconnected)])
+		[target juggernautDisconnected];
+}
+
+-(void)receiveMessage:(NSString *)message
+{
+	[target juggernautReceiveMessage:message];
 }
 	
 - (void)dealloc
