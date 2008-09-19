@@ -36,16 +36,16 @@
 {
 	if(success)
 	{
-		[target isConnected];
+		[target performSelector:@selector(isConnected)];
 		return;
 	}
 	
-	[target connectionFailed];	
+	[target performSelector:@selector(connectFailed)];	
 }
 
 - (void)onClose
 {
-	[target isDisconnected];
+	[target performSelector:@selector(disconnected)];
 }
 	
 - (void)dealloc
