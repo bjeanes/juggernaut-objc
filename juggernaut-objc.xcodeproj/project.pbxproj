@@ -30,8 +30,8 @@
 		28D7ACF70DDB3853001CB0EB /* juggernaut_objcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = juggernaut_objcViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* juggernaut_objc_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = juggernaut_objc_Prefix.pch; sourceTree = "<group>"; };
-		6C7267880E83C7620065375A /* MCJuggernaut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCJuggernaut.h; path = ../MCJuggernaut.h; sourceTree = "<group>"; };
-		6C7267890E83C7620065375A /* MCJuggernaut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCJuggernaut.m; path = ../MCJuggernaut.m; sourceTree = "<group>"; };
+		6C7267880E83C7620065375A /* MCJuggernaut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJuggernaut.h; sourceTree = "<group>"; };
+		6C7267890E83C7620065375A /* MCJuggernaut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJuggernaut.m; sourceTree = "<group>"; };
 		6C7267A90E83D6140065375A /* Juggernaut.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Juggernaut.js; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
